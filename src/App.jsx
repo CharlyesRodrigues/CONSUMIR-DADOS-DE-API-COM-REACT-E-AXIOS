@@ -1,12 +1,18 @@
 
 import {Outlet} from "react-router-dom";
+import { NavBar } from "./components/navBar";
+
 function App() {
  
 
   return (
    
-      <div>
-     <Outlet />
+      <div className="App">
+        <NavBar />
+        <div className="container">
+        <Outlet />
+        </div>
+     
       </div>
     
   )
