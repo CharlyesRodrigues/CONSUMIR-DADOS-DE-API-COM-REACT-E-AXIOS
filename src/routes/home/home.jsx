@@ -1,5 +1,6 @@
 import axios from "axios";
 import "../home/style.css";
+import { blogFetch } from "../../axios/config";
 
 import React from 'react'
 
@@ -17,8 +18,7 @@ export const Home = () => {
   // console.log("testando"); Colocar dentro da função getPosts para testar o funcionamento da função no useEffect
   const getPosts = async () => {
     try {
-      const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts"
+      const response = await blogFetch.get("/posts"
       );
 
       const data = response.data;
