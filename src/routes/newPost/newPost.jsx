@@ -1,4 +1,7 @@
 import React from 'react'
+import "../newPost/style.css";
+
+
 
 export const NewPost = () => {
   return (
@@ -16,14 +19,14 @@ export const NewPost = () => {
         </div>
 
         <div className="form-control">
-          <label htmlFor="body">Conteúdo:</label>
+          <label htmlFor="body">Conteúdo</label>
           <textarea
             name="body"
             id="body"
             placeholder='Digite o conteúdo'>
 
           </textarea>
-          <input className='btn' type="submit" value="Criar Post" />
+          <input id="btn" type="submit" value="Criar Post" />
         </div>
 
 
