@@ -41,24 +41,24 @@ export const Home = () => {
 
 
   return (
-    <div className="container">
-<h1>Últimos Posts</h1>
-{posts.length === 0 ? <p>Carregando...</p> : (
-posts.map((posts)=>(
+    <div className="teste">
+      <h1>Últimos Posts</h1>
+      {posts.length === 0 ? <p>Carregando...</p> : (
+        posts.map((posts) => (
 
 
-<div className="posts"  key={posts.id}>
-<h2>{posts.title} </h2>
-<p>{posts.body} </p>
-<Link to={`/posts/${posts.id}`} className="btn" >Ler mais...</Link>
+          <div className="posts" key={posts.id}>
+            <h2>{posts.title} </h2>
+            <p>{posts.body} </p>
+            <Link to={`/posts/${posts.id}`} className="btn" >Ler mais...</Link>
 
-</div>
-
-
-))
+          </div>
 
 
-)}
+        ))
+
+
+      )}
 
     </div>
   )
